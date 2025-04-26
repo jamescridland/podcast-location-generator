@@ -303,7 +303,7 @@ xhr.onreadystatechange = function() {
 }
 	
 async function makeTag() {
-    xhr.open('GET', 'https://nominatim.openstreetmap.org/search.php?q=' + document.getElementById('placename').value + '&countrycodes=' + document.getElementById('country').value + '&format=jsonv2', true);
+    xhr.open('GET', 'https://nominatim.openstreetmap.org/search?q=' + document.getElementById('placename').value + '&countrycodes=' + document.getElementById('country').value + '&format=jsonv2', true);
     xhr.send(null);
 }
 
